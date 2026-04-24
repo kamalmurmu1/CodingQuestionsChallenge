@@ -11,9 +11,14 @@ public class LongestCommonPrefix {
             return strs[0];
         }
         int pointer = 0, i = 0;
-        char temp = strs[0].charAt(pointer);
+        char temp;
+        if (strs[0].length() > 0) {
+            temp = strs[0].charAt(pointer);
+        } else {
+            return result;
+        }
         while (pointer != -1) {
-            if (strs[i].length() < pointer) {
+            if (strs[i].length() - 1 < pointer) {
                 break;
             }
             if (strs[i].charAt(pointer) != temp) {
