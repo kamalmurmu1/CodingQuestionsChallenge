@@ -1,5 +1,5 @@
-package NeetCode.lengthoflastword;
-// https://neetcode.io/problems/length-of-last-word/question
+package LeetCode.lengthoflastword;
+// https://leetcode.com/problems/length-of-last-word/
 public class LengthOfLastWord {
     public int lengthOfLastWord(String s) {
         String resultStr = "";
